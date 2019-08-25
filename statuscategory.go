@@ -29,7 +29,7 @@ const (
 //
 // JIRA API docs: https://developer.atlassian.com/cloud/jira/platform/rest/#api-api-2-statuscategory-get
 func (s *StatusCategoryService) GetList() ([]StatusCategory, *Response, error) {
-	apiEndpoint := "rest/api/2/statuscategory"
+	apiEndpoint := "rest/api/3/statuscategory"
 	req, err := s.client.NewRequest("GET", apiEndpoint, nil)
 	if err != nil {
 		return nil, nil, err
